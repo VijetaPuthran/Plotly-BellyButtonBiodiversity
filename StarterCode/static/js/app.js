@@ -1,3 +1,5 @@
+//Function defined to plot the bar graph
+function plots(sample) {
 //Using D3 library to read the data in samples.json
     d3.json("samples.json").then((data) => {
     var samples= data.samples;
@@ -7,7 +9,7 @@
     var labels = result.otu_labels;
     var values = result.sample_values;
 //Build the bar plot with the sample data
-     var bar_data =[
+     var data =[
       {
 // Slice the first 10 objects for plotting
         y:ids.slice(0, 10).map(otuID => `OTU ${otuID}`).reverse(),
@@ -22,8 +24,8 @@
       margin: { t: 30, l: 150 }
     };
 
-    Plotly.newPlot("bar", bar_data, layout);
+    Plotly.newPlot("bar", data, layout);
   });
-
+}
    
  
