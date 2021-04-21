@@ -53,3 +53,4 @@ The final page created is as follows:
 
 * The app is deployed to a free static page hosting service, GitHub Pages : 
 [BellyButtonBiodiversityApp](https://vijetaputhran.github.io/Plotly-BellyButtonBiodiversity/)
+ 
