@@ -49,5 +49,5 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 ## Deployment
 
-* The app is deployed to a free static page hosting service, GitHub Pages 
-[githubpage](https://vijetaputhran.github.io/Plotly-BellyButtonBiodiversity/)
+* The app is deployed to a free static page hosting service, GitHub Pages : 
+[BellyButtonBiodiversityApp](https://vijetaputhran.github.io/Plotly-BellyButtonBiodiversity/)
