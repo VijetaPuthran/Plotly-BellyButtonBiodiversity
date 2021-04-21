@@ -37,4 +37,17 @@ The dataset reveals that a small handful of microbial species (also called opera
 
 6. All of the plots are updated any time a new sample is selected.
 
+## Advanced Challenge Assignment
 
+
+* The Gauge Chart is adapted from <https://plot.ly/javascript/gauge-charts/> to plot the weekly washing frequency of the individual.
+
+* The example gauge code is modified to account for values ranging from 0 through 9.
+
+* The chart is updated whenever a new sample is selected.
+
+
+## Deployment
+
+* The app is deployed to a free static page hosting service, GitHub Pages 
+[githubpage](https://vijetaputhran.github.io/Plotly-BellyButtonBiodiversity/)
