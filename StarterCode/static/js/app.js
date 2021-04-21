@@ -27,7 +27,6 @@ function jsonData(sample) {
 
     });
   }
-
 //Function defined to plot the bar graph
 function plots(sample) {
 //Using D3 library to read the data in samples.json
@@ -46,8 +45,8 @@ var bdata = [
       text: labels,
       mode: "markers",
       marker: {
-        color: ids,
-        size: values,
+      color: ids,
+      size: values,
         }
     }
     ];
@@ -57,7 +56,6 @@ var blayout = {
         hovermode: "closest",
         };
 Plotly.plot("bubble", bdata, blayout);
-
 //Build the bar plot with the sample data
     var data =[
       {
@@ -80,7 +78,6 @@ Plotly.plot("bubble", bdata, blayout);
 function init() {
     // Grab a reference to the dropdown select element
     var selector = d3.select("#selDataset");
-    
     // Use the list of sample names to populate the select options
     d3.json("samples.json").then((data) => {
       var sampleNames = data.names;
@@ -90,8 +87,7 @@ function init() {
           .text(sample)
           .property("value", sample);
       });
-    
-      // Use the first sample from the list to build the initial plots
+    // Use the first sample from the list to build the initial plots
       const firstSample = sampleNames[0];
       plots(firstSample);
       jsonData(firstSample);
